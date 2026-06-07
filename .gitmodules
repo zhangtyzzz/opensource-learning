@@ -1,0 +1,9 @@
+[submodule "langgraph/source"]
+	path = langgraph/source
+	url = https://github.com/langchain-ai/langgraph.git
+[submodule "langchain/source"]
+	path = langchain/source
+	url = https://github.com/langchain-ai/langchain.git
+[submodule "mem0/source"]
+	path = mem0/source
+	url = https://github.com/mem0ai/mem0.git
