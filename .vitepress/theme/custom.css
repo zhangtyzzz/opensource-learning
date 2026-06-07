@@ -1,0 +1,117 @@
+:root {
+  /* Claude-inspired: warm terracotta + cream canvas */
+  --vp-c-brand-1: #cc785c;
+  --vp-c-brand-2: #a9583e;
+  --vp-c-brand-3: #cc785c;
+  --vp-c-brand-soft: rgba(204, 120, 92, 0.14);
+
+  /* Cream canvas background */
+  --vp-c-bg: #faf9f5;
+  --vp-c-bg-alt: #f5f0e8;
+  --vp-c-bg-elv: #efe9de;
+  --vp-c-bg-soft: #f5f0e8;
+
+  /* Text — warm tones */
+  --vp-c-text-1: #141413;
+  --vp-c-text-2: #3d3d3a;
+  --vp-c-text-3: #6c6a64;
+
+  /* Borders */
+  --vp-c-border: #e6dfd8;
+  --vp-c-divider: #e6dfd8;
+  --vp-c-gutter: #f5f0e8;
+
+  /* Sidebar */
+  --vp-sidebar-bg-color: #faf9f5;
+
+  /* Nav */
+  --vp-nav-bg-color: #faf9f5;
+
+  /* Custom properties */
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(135deg, #cc785c, #a9583e);
+}
+
+.dark {
+  --vp-c-bg: #181715;
+  --vp-c-bg-alt: #1e1d1a;
+  --vp-c-bg-elv: #252320;
+  --vp-c-bg-soft: #252320;
+
+  --vp-c-text-1: #faf9f5;
+  --vp-c-text-2: #a09d96;
+  --vp-c-text-3: #8e8b82;
+
+  --vp-c-border: #3d3a35;
+  --vp-c-divider: #3d3a35;
+  --vp-c-gutter: #252320;
+
+  --vp-sidebar-bg-color: #181715;
+  --vp-nav-bg-color: #181715;
+}
+
+/* Typography: use serif for headings to match Claude's editorial feel */
+.vp-doc h1,
+.vp-doc h2,
+.vp-doc h3 {
+  font-family: 'EB Garamond', 'Georgia', serif;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+.vp-doc h1 {
+  font-size: 36px;
+  line-height: 1.15;
+  letter-spacing: -1px;
+}
+
+.vp-doc h2 {
+  border-top: none;
+  padding-top: 24px;
+}
+
+/* Sidebar active item — coral accent */
+.VPSidebarItem.is-active > .item > .link > .text {
+  color: var(--vp-c-brand-1);
+}
+
+/* Code blocks — dark surface */
+.vp-doc div[class*='language-'] {
+  background-color: #181715;
+  border: 1px solid #3d3a35;
+}
+
+.dark .vp-doc div[class*='language-'] {
+  background-color: #252320;
+  border-color: #3d3a35;
+}
+
+/* Table styling — cream cards */
+.vp-doc table {
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.vp-doc tr {
+  border-color: var(--vp-c-border);
+}
+
+.vp-doc th {
+  background-color: var(--vp-c-bg-alt);
+  font-weight: 500;
+}
+
+/* Link color — coral */
+.vp-doc a {
+  color: var(--vp-c-brand-1);
+  text-decoration-color: rgba(204, 120, 92, 0.3);
+}
+
+.vp-doc a:hover {
+  color: var(--vp-c-brand-2);
+  text-decoration-color: var(--vp-c-brand-2);
+}
+
+/* Import EB Garamond for serif headings */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&display=swap');
