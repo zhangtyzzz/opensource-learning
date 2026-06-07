@@ -17,8 +17,8 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: 'LangGraph', link: '/langgraph/gitbook/00-index' },
-      { text: 'LangChain', link: '/langchain/' },
-      { text: 'Mem0', link: '/mem0/' },
+      { text: 'LangChain', link: '/langchain/gitbook/00-index' },
+      { text: 'Mem0', link: '/mem0/gitbook/00-index' },
     ],
 
     sidebar: {
@@ -43,6 +43,41 @@ export default defineConfig({
           text: 'Notes — 问题研究',
           items: [
             { text: 'Checkpointer 存储膨胀', link: '/langgraph/notes/01-checkpointer-deep-dive' },
+          ],
+        },
+      ],
+      '/langchain/': [
+        {
+          text: 'Gitbook — 框架解读',
+          items: [
+            { text: '目录', link: '/langchain/gitbook/00-index' },
+            { text: '01 全景概览', link: '/langchain/gitbook/01-overview' },
+            { text: '02 架构与包设计', link: '/langchain/gitbook/02-architecture' },
+            { text: '03 Runnable 协议', link: '/langchain/gitbook/03-runnable-protocol' },
+            { text: '04 模型与消息', link: '/langchain/gitbook/04-models-and-messages' },
+            { text: '05 Prompt 与输出解析', link: '/langchain/gitbook/05-prompts-and-output-parsing' },
+            { text: '06 工具与函数调用', link: '/langchain/gitbook/06-tools-and-tool-calling' },
+            { text: '07 检索增强生成', link: '/langchain/gitbook/07-retrieval-and-rag' },
+            { text: '08 Agent 与编排', link: '/langchain/gitbook/08-agents-and-orchestration' },
+            { text: '09 可观测性', link: '/langchain/gitbook/09-observability-and-tracing' },
+            { text: '10 生产实践', link: '/langchain/gitbook/10-production-practices' },
+          ],
+        },
+      ],
+      '/mem0/': [
+        {
+          text: 'Gitbook — 框架解读',
+          items: [
+            { text: '目录', link: '/mem0/gitbook/00-index' },
+            { text: '01 全景概览', link: '/mem0/gitbook/01-overview' },
+            { text: '02 架构总览', link: '/mem0/gitbook/02-architecture' },
+            { text: '03 核心概念', link: '/mem0/gitbook/03-core-concepts' },
+            { text: '04 Provider 插件体系', link: '/mem0/gitbook/04-provider-pattern' },
+            { text: '05 写入路径剖析', link: '/mem0/gitbook/05-write-path' },
+            { text: '06 读取路径剖析', link: '/mem0/gitbook/06-read-path' },
+            { text: '07 图记忆与平台', link: '/mem0/gitbook/07-graph-memory-and-platform' },
+            { text: '08 集成生态', link: '/mem0/gitbook/08-integrations' },
+            { text: '09 生产实践', link: '/mem0/gitbook/09-production-practices' },
           ],
         },
       ],
