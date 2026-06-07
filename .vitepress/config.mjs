@@ -9,6 +9,10 @@ export default defineConfig({
 
   srcExclude: ['**/source/**', '**/examples/**'],
 
+  markdown: {
+    theme: { light: 'github-dark', dark: 'github-dark' },
+  },
+
   themeConfig: {
     nav: [
       { text: 'LangGraph', link: '/langgraph/gitbook/00-index' },
