@@ -1,5 +1,3 @@
-Now I have all the source code context I need. Let me write the chapter.
-
 # 10 - 生产实践：安全、性能与框架取舍
 
 将 LangChain 从原型推向生产，需要面对三类截然不同的问题：安全漏洞可能让攻击者控制你的 LLM 管道，抽象层开销可能让延迟和内存翻倍，而最根本的问题是——你是否真的需要这个框架。本章逐一拆解这些现实挑战。

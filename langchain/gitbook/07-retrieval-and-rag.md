@@ -1,5 +1,3 @@
-Now I have all the source code I need. Let me write the chapter.
-
 # 07 - 检索增强生成：从数据加载到语义检索的全链路
 
 RAG（Retrieval-Augmented Generation）是 LangChain 最高频的应用模式。它的核心思路简单直接：先从外部数据源中检索与用户查询相关的文档片段，再将这些片段作为上下文注入 Prompt，让 LLM 基于真实数据生成回答。但"简单"的思路背后是一条相当长的数据处理管线，LangChain 为这条管线上的每个环节都设计了独立的抽象接口。

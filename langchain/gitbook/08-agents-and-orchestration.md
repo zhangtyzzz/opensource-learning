@@ -1,5 +1,3 @@
-Now I have enough context. Let me write the chapter.
-
 # 08 - Agent 系统：从链式调用到图状态机
 
 ## 一次彻底的架构转向

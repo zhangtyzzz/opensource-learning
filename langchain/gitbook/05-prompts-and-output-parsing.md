@@ -1,5 +1,3 @@
-Good, I have a style reference. Now I have all the information needed. Let me write the chapter.
-
 # 05 - Prompt 模板与输出解析：模型 I/O 管线
 
 LLM 调用可以被拆解为三个阶段：**格式化输入**、**调用模型**、**解析输出**。上一章讨论了中间环节——模型与消息的类型系统。本章聚焦两端：Prompt 模板如何将原始变量组装成模型能理解的输入，Output Parser 如何将模型的自由文本转化为程序能处理的结构化数据。

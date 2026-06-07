@@ -1,5 +1,3 @@
-Now I have all the details I need. Let me write the chapter.
-
 # 01 - LangChain 全景：从胶水代码到编排框架
 
 ## 一个真实的起点：直接调 SDK 有什么问题？

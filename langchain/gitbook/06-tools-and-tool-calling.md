@@ -1,5 +1,3 @@
-Now I have all the information needed. Let me write the chapter.
-
 # 06 - 工具与函数调用：扩展 LLM 的行动能力
 
 LLM 本身只能生成文本。要让它查数据库、调 API、执行计算，需要一个桥梁——**工具（Tool）**。LangChain 的工具抽象解决两个核心问题：如何把普通 Python 函数"提升"为 LLM 可理解和调用的工具，以及如何在模型与工具之间建立标准化的请求-响应协议。

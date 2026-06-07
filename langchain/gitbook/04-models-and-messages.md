@@ -1,5 +1,3 @@
-Now I have the style reference. Let me write the chapter.
-
 # 04 - 模型与消息：LLM 交互的类型系统
 
 ## 为什么需要类型化的模型抽象

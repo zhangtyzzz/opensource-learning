@@ -1,5 +1,3 @@
-Now I have all the data I need. Let me write the chapter.
-
 # 02 - 架构与包设计：Monorepo 中的分层解耦
 
 在上一章中，我们理解了 LangChain 要解决的核心问题——为 LLM 应用提供一个供应商无关的编排层。但一个拥有 700+ 集成、横跨多个演进阶段的框架，其内部代码组织不可能是一个简单的 Python 包。本章从仓库结构出发，拆解 LangChain 的分层架构，理解每一层的职责边界、依赖方向，以及推动这种架构形成的工程决策。
