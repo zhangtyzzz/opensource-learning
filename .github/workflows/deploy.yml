@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Deploy VitePress site to Pages
 
 on:
   push:
@@ -18,16 +18,23 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v5
         with:
-          submodules: true
-      - uses: actions/setup-node@v4
+          fetch-depth: 0
+      - name: Setup Node
+        uses: actions/setup-node@v6
         with:
-          node-version: 22
+          node-version: 24
           cache: npm
-      - run: npm ci
-      - run: npm run build
-      - uses: actions/upload-pages-artifact@v3
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+      - name: Install dependencies
+        run: npm ci
+      - name: Build with VitePress
+        run: npm run build
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
           path: .vitepress/dist
 
@@ -38,5 +45,6 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - id: deployment
+      - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v4

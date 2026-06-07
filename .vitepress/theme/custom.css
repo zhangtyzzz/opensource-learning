@@ -75,7 +75,7 @@
   color: var(--vp-c-brand-1);
 }
 
-/* Code blocks — dark surface */
+/* Code blocks — dark surface for real code */
 .vp-doc div[class*='language-'] {
   background-color: #181715;
   border: 1px solid #3d3a35;
@@ -84,6 +84,30 @@
 .dark .vp-doc div[class*='language-'] {
   background-color: #252320;
   border-color: #3d3a35;
+}
+
+/* Plain text / ASCII diagram blocks — cream surface, dark text
+   VitePress generates class="language- vp-adaptive-theme" for untagged blocks */
+.vp-doc div[class^='language- '] {
+  background-color: #f5f0e8;
+  border: 1px solid #e6dfd8;
+}
+
+.vp-doc div[class^='language- '] code {
+  color: #3d3d3a;
+}
+
+.vp-doc div[class^='language- '] .lang {
+  color: #8e8b82;
+}
+
+.dark .vp-doc div[class^='language- '] {
+  background-color: #252320;
+  border-color: #3d3a35;
+}
+
+.dark .vp-doc div[class^='language- '] code {
+  color: #a09d96;
 }
 
 /* Table styling — cream cards */

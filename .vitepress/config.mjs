@@ -4,6 +4,7 @@ export default defineConfig({
   title: 'Open Source Learning',
   description: 'Agent / LLM 开源框架深度学习',
   lang: 'zh-CN',
+  base: '/opensource-learning/',
   lastUpdated: true,
   ignoreDeadLinks: true,
 
